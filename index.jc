@@ -1,0 +1,30 @@
+// let sideA = window.prompt("please enter  side A");
+// sideA = Number(sideA);
+
+// let sideB = window.prompt("please enter  side B");
+// sideB = Number(sideB);
+
+
+// let sideC = Math.sqrt((sideA**2)+ (sideB**2));
+
+// console.log( "the hypothenus of c is: ", sideC)
+
+
+let sideA;
+let sideB;
+let sideC
+
+document.getElementById("submitbutton").onclick = function(){
+    sideA = document.getElementById("textA").value;
+    sideA = Number(sideA)
+
+    sideB = document.getElementById("textB").value;
+    sideB = Number(sideB)
+
+    sideC = Math.sqrt((sideA**2)+ (sideB**2));
+    document.getElementById("labelC").innerHTML = "side c: " + sideC
+    
+    
+
+
+}
